@@ -1,0 +1,41 @@
+<h1>แบบฟอร์มสมัครงาน</h1>
+<html>
+    <head>
+        <title> orderform </title>
+    </head>
+        <body>
+            <form>
+                ชื่อ-นามสกุล <input type = "text" name="user" placeholder = "กรุณาใส่ชื่อผู้ใช้" required><br>
+                 
+                <input type = "radio" name= "sex" value="men">เพศชาย 
+                 <input type = "radio" name= "sex" value="wonen"> เพศหญิง 
+                 <input type = "radio" name= "sex" value="none"> ไม่ระบุ <br>
+                
+                 ภาษาโปรแกรมที่ถนัด<br>
+                 <input type="checkbox" name = "program" value="py"> ภาษา Pyhon <br>
+                 <input type="checkbox" name = "program" value="C"> ภาษา C++ <br>
+                 <input type="checkbox" name = "program" value="่java"> ภาษา Java <br>
+                 <input type="checkbox" name = "program" value="html"> ภาษา HTML / CSS <br>
+
+                อีเมล <input type = "text" name="email" placeholder = "กรอกอีเมล" required><br>
+                เบอร์โทรศัพท์ <input type = "text" name="email" placeholder = "กรอกเบอร์โทรศัพท์" required><br>
+
+                <label for = "job-meu">ตำแหน่งที่ต้องการสมัคร</label> 
+                <select name = "job">
+                    <option>- -เลือกตำแหน่ง- -</option>
+                    <option value="job1">นักพัฒนาโปรแกรม</option>
+                    <option value="job2">นักออกแบบ</option>
+                    <option value="job3">ผู้จัดการ</option> 
+                </select><br>
+                
+                <label for="resume">อัพโหลดเรซูเม่</label> 
+                <input type="file" id ="resume" name="resume"><br>
+
+
+                <label for = "a-more">ข้อความเพิ่มเติม</label><br>
+                <textarea id = "a-more" name = "more" rows="5" value="Storemessages"></textarea><br>
+                <br>
+                 <input type="submit" value="ส่งใบสมัคร">
+            </form>
+        </body>
+</html>

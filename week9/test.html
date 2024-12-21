@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>เว็บไซต์สมัครงาน</title>
+    <style>/* สร้างกรอบ */
+        .form-container {
+            border: 2px solid #000;
+            padding: 20px; 
+            margin: 20px auto; 
+            width: 50%; 
+            box-sizing: border-box; 
+            background-color: #f9f9f9; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>แบบฟอร์มสมัครงาน</h1>
+        <form>
+            ชื่อ-นามสกุล: <input type="text" name="user" placeholder="กรุณาใส่ชื่อผู้ใช้" required><br>
+            
+            เพศ: 
+            <input type="radio" name="sex" value="men"> เพศชาย
+            <input type="radio" name="sex" value="women"> เพศหญิง
+            <input type="radio" name="sex" value="none"> ไม่ระบุ <br>
+
+            ภาษาโปรแกรมที่ถนัด: <br>
+            <input type="checkbox" name="program" value="py"> ภาษา Python <br>
+            <input type="checkbox" name="program" value="C"> ภาษา C++ <br>
+            <input type="checkbox" name="program" value="java"> ภาษา Java <br>
+            <input type="checkbox" name="program" value="html"> ภาษา HTML / CSS <br>
+
+            อีเมล: <input type="text" name="email" placeholder="กรอกอีเมล" required><br>
+            เบอร์โทรศัพท์: <input type="text" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required><br>
+
+            <label for="job-menu">ตำแหน่งที่ต้องการสมัคร:</label> 
+            <select name="job">
+                <option>- -เลือกตำแหน่ง- -</option>
+                <option value="job1">นักพัฒนาโปรแกรม</option>
+                <option value="job2">นักออกแบบ</option>
+                <option value="job3">ผู้จัดการ</option> 
+            </select><br>
+            
+            <label for="resume">อัพโหลดเรซูเม่:</label> 
+            <input type="file" id="resume" name="resume"><br>
+
+            <label for="a-more">ข้อความเพิ่มเติม:</label><br>
+            <textarea id="a-more" name="more" rows="5" placeholder="กรุณากรอกข้อมูลเพิ่มเติม"></textarea><br>
+            
+            <input type="submit" value="ส่งใบสมัคร">
+        </form>
+    </div>
+</body>
+</html>
