@@ -6,32 +6,29 @@
 
 <body>
     <div class="form-container">
-    
-            <h1 style="color: rgb(191, 0, 95);">JabJum shonp</h1>
-            <h3>long in / เข้าสู่ระบบ </h3>
-            <input type="text" name="user" placeholder="ชื่อหรืออีเมล" required><br>
-            <br>
-            <input type="password" name="pass " placeholder="รหัสผ่าน" required><br>
+        <h1 style="color: rgb(191, 0, 95);">JabJum shonp</h1>
+        <h3>Login / เข้าสู่ระบบ</h3>
+        <input type="text" name="user" placeholder="ชื่อหรืออีเมล" required><br>
+        <br>
+        <input type="password" name="pass" placeholder="รหัสผ่าน" required><br>
 
-            <form style="display: flex; justify-content: space-between; width: 100%;">
-                <a href="singin.html" style="font-size: 12px; color: #ff00b7;">ลงทะเบียนเข้าใช้งาน</a>
-                <a href="singin.html" style="font-size: 12px; color: #ff00b7;">ลืมรหัสผ่าน</a>
-            </form>
+        <form class="form-links">
+            <a href="singin.html">ลงทะเบียนเข้าใช้งาน</a>
+            <a href="singin.html">ลืมรหัสผ่าน</a>
+        </form>
 
-            <br>
-            <input type="submit" value="เข้าสู่ระบบ" onclick="window.location.href='index.html';" style="background-color: rgb(238, 0, 151); color: white; border: none; padding: 10px 20px; font-size: 16px;">
-            <br>
-            <br>
-            <h4 style="color: rgb(191, 0, 95);">------------------------หรือ------------------------</h4>
-            <form action="/login" method="POST">
-                <button type="submit" style="font-size: 16px; padding: 20px 40px; border: 2px solid #ff0095; background-color: transparent; color: #ff0073; width: 100%; border-radius: 5px;">long in google</button>
-                <br>
-                <br>
-                <button type="submit" style="font-size: 16px; padding: 20px 40px; border: 2px solid #ff0095; background-color: transparent; color: #ff0073;  width: 100%; border-radius: 5px;">long in with Facebook</button>
-              </form>
+        <br>
+        <input type="submit" value="เข้าสู่ระบบ" onclick="window.location.href='index.html';" class="submit-btn">
+        <br><br>
 
+        <h4>------------------------หรือ------------------------</h4>
 
+        <form action="/login" method="POST">
+            <button type="submit" class="social-btn">Login with Google</button>
+            <br>
+            <button type="submit" class="social-btn">Login with Facebook</button>
         </form>
     </div>
 </body>
+
 </html>
